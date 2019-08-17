@@ -53,6 +53,7 @@ class DenseNetEncoder(DenseNet):
         return features
 
     def load_state_dict(self, state_dict):
+        pdb.set_trace()
         pattern = re.compile(
             r'^(.*denselayer\d+\.(?:norm|relu|conv))\.((?:[12])\.(?:weight|bias|running_mean|running_var))$')
         for key in list(state_dict.keys()):
@@ -62,6 +63,7 @@ class DenseNetEncoder(DenseNet):
                 state_dict[new_key] = state_dict[key]
                 del state_dict[key]
 
+        pdb.set_trace()
         # remove linear
         state_dict.pop('classifier.bias')
         state_dict.pop('classifier.weight')

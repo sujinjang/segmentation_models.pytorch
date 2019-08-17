@@ -1,0 +1,226 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AUTHOR	setup.py	/^AUTHOR = 'Pavel Yakubovskiy'$/;"	v
+AUXModule	segmentation_models_pytorch/pspnet/decoder.py	/^class AUXModule(nn.Module):$/;"	c
+BCEDiceLoss	segmentation_models_pytorch/utils/losses.py	/^class BCEDiceLoss(DiceLoss):$/;"	c
+BCEJaccardLoss	segmentation_models_pytorch/utils/losses.py	/^class BCEJaccardLoss(JaccardLoss):$/;"	c
+CLASSES	loader/loader_camvid.py	/^  CLASSES = ['sky', 'building', 'pole', 'road', 'pavement', $/;"	v	class:camvidLoader
+CenterBlock	segmentation_models_pytorch/unet/decoder.py	/^class CenterBlock(DecoderBlock):$/;"	c
+Conv2dReLU	segmentation_models_pytorch/common/blocks.py	/^class Conv2dReLU(nn.Module):$/;"	c
+Conv3x3GNReLU	segmentation_models_pytorch/fpn/decoder.py	/^class Conv3x3GNReLU(nn.Module):$/;"	c
+DESCRIPTION	setup.py	/^DESCRIPTION = 'Image segmentation models with pre-trained backbones. PyTorch.'$/;"	v
+DPNEncorder	segmentation_models_pytorch/encoders/dpn.py	/^class DPNEncorder(DPN):$/;"	c
+DecoderBlock	segmentation_models_pytorch/linknet/decoder.py	/^class DecoderBlock(nn.Module):$/;"	c
+DecoderBlock	segmentation_models_pytorch/unet/decoder.py	/^class DecoderBlock(nn.Module):$/;"	c
+DenseNetEncoder	segmentation_models_pytorch/encoders/densenet.py	/^class DenseNetEncoder(DenseNet):$/;"	c
+DiceLoss	segmentation_models_pytorch/utils/losses.py	/^class DiceLoss(nn.Module):$/;"	c
+EMAIL	setup.py	/^EMAIL = 'qubvel@gmail.com'$/;"	v
+ENCODERS	tests/test_models.py	/^ENCODERS = get_encoder()$/;"	v
+EXTRAS	setup.py	/^EXTRAS = {$/;"	v
+EncoderDecoder	segmentation_models_pytorch/base/encoder_decoder.py	/^class EncoderDecoder(Model):$/;"	c
+Epoch	segmentation_models_pytorch/utils/train.py	/^class Epoch:$/;"	c
+FPN	segmentation_models_pytorch/fpn/model.py	/^class FPN(EncoderDecoder):$/;"	c
+FPNBlock	segmentation_models_pytorch/fpn/decoder.py	/^class FPNBlock(nn.Module):$/;"	c
+FPNDecoder	segmentation_models_pytorch/fpn/decoder.py	/^class FPNDecoder(Model):$/;"	c
+FscoreMetric	segmentation_models_pytorch/utils/metrics.py	/^class FscoreMetric(nn.Module):$/;"	c
+InceptionResNetV2Encoder	segmentation_models_pytorch/encoders/inceptionresnetv2.py	/^class InceptionResNetV2Encoder(InceptionResNetV2):$/;"	c
+IoUMetric	segmentation_models_pytorch/utils/metrics.py	/^class IoUMetric(nn.Module):$/;"	c
+JaccardLoss	segmentation_models_pytorch/utils/losses.py	/^class JaccardLoss(nn.Module):$/;"	c
+Linknet	segmentation_models_pytorch/linknet/model.py	/^class Linknet(EncoderDecoder):$/;"	c
+LinknetDecoder	segmentation_models_pytorch/linknet/decoder.py	/^class LinknetDecoder(Model):$/;"	c
+Model	segmentation_models_pytorch/base/model.py	/^class Model(nn.Module):$/;"	c
+NAME	setup.py	/^NAME = 'segmentation_models_pytorch'$/;"	v
+PSPDecoder	segmentation_models_pytorch/pspnet/decoder.py	/^class PSPDecoder(Model):$/;"	c
+PSPModule	segmentation_models_pytorch/pspnet/decoder.py	/^class PSPModule(nn.Module):$/;"	c
+PSPNet	segmentation_models_pytorch/pspnet/model.py	/^class PSPNet(EncoderDecoder):$/;"	c
+PyramidStage	segmentation_models_pytorch/pspnet/decoder.py	/^class PyramidStage(nn.Module):$/;"	c
+REQUIRED	setup.py	/^        REQUIRED = f.read().split('\\n')$/;"	v
+REQUIRED	setup.py	/^    REQUIRED = []$/;"	v
+ResNetEncoder	segmentation_models_pytorch/encoders/resnet.py	/^class ResNetEncoder(ResNet):$/;"	c
+SENetEncoder	segmentation_models_pytorch/encoders/senet.py	/^class SENetEncoder(SENet):$/;"	c
+SegmentationBlock	segmentation_models_pytorch/fpn/decoder.py	/^class SegmentationBlock(nn.Module):$/;"	c
+TrainEpoch	segmentation_models_pytorch/utils/train.py	/^class TrainEpoch(Epoch):$/;"	c
+TransposeX2	segmentation_models_pytorch/linknet/decoder.py	/^class TransposeX2(nn.Module):$/;"	c
+URL	setup.py	/^URL = 'https:\/\/github.com\/qubvel\/segmentation_models.pytorch'$/;"	v
+Unet	segmentation_models_pytorch/unet/model.py	/^class Unet(EncoderDecoder):$/;"	c
+UnetDecoder	segmentation_models_pytorch/unet/decoder.py	/^class UnetDecoder(Model):$/;"	c
+UploadCommand	setup.py	/^class UploadCommand(Command):$/;"	c
+VERSION	segmentation_models_pytorch/__version__.py	/^VERSION = (0, 0, 1)$/;"	v
+VERSION	setup.py	/^VERSION = None$/;"	v
+VGGEncoder	segmentation_models_pytorch/encoders/vgg.py	/^class VGGEncoder(VGG):$/;"	c
+ValidEpoch	segmentation_models_pytorch/utils/train.py	/^class ValidEpoch(Epoch):$/;"	c
+__getitem__	loader/loader_camvid.py	/^  def __getitem__(self, idx):$/;"	m	class:camvidLoader	file:
+__init__	loader/loader_camvid.py	/^  def __init__(self, file_paths,	classes=None, augmentation=None,$/;"	m	class:camvidLoader
+__init__	segmentation_models_pytorch/base/encoder_decoder.py	/^    def __init__(self, encoder, decoder, activation):$/;"	m	class:EncoderDecoder
+__init__	segmentation_models_pytorch/base/model.py	/^    def __init__(self):$/;"	m	class:Model
+__init__	segmentation_models_pytorch/common/blocks.py	/^    def __init__(self, in_channels, out_channels, kernel_size, padding=0,$/;"	m	class:Conv2dReLU
+__init__	segmentation_models_pytorch/encoders/densenet.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:DenseNetEncoder
+__init__	segmentation_models_pytorch/encoders/dpn.py	/^    def __init__(self, feature_blocks, *args, **kwargs):$/;"	m	class:DPNEncorder
+__init__	segmentation_models_pytorch/encoders/inceptionresnetv2.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:InceptionResNetV2Encoder
+__init__	segmentation_models_pytorch/encoders/resnet.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:ResNetEncoder
+__init__	segmentation_models_pytorch/encoders/senet.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:SENetEncoder
+__init__	segmentation_models_pytorch/encoders/vgg.py	/^    def __init__(self, config, batch_norm=False, *args, **kwargs):$/;"	m	class:VGGEncoder
+__init__	segmentation_models_pytorch/fpn/decoder.py	/^    def __init__($/;"	m	class:FPNDecoder
+__init__	segmentation_models_pytorch/fpn/decoder.py	/^    def __init__(self, in_channels, out_channels, n_upsamples=0):$/;"	m	class:SegmentationBlock
+__init__	segmentation_models_pytorch/fpn/decoder.py	/^    def __init__(self, in_channels, out_channels, upsample=False):$/;"	m	class:Conv3x3GNReLU
+__init__	segmentation_models_pytorch/fpn/decoder.py	/^    def __init__(self, pyramid_channels, skip_channels):$/;"	m	class:FPNBlock
+__init__	segmentation_models_pytorch/fpn/model.py	/^    def __init__($/;"	m	class:FPN
+__init__	segmentation_models_pytorch/linknet/decoder.py	/^    def __init__($/;"	m	class:LinknetDecoder
+__init__	segmentation_models_pytorch/linknet/decoder.py	/^    def __init__(self, in_channels, out_channels, use_batchnorm=True):$/;"	m	class:DecoderBlock
+__init__	segmentation_models_pytorch/linknet/decoder.py	/^    def __init__(self, in_channels, out_channels, use_batchnorm=True, **batchnorm_params):$/;"	m	class:TransposeX2
+__init__	segmentation_models_pytorch/linknet/model.py	/^    def __init__($/;"	m	class:Linknet
+__init__	segmentation_models_pytorch/pspnet/decoder.py	/^    def __init__($/;"	m	class:PSPDecoder
+__init__	segmentation_models_pytorch/pspnet/decoder.py	/^    def __init__(self, in_channels, out_channels, pool_size, use_bathcnorm=True):$/;"	m	class:PyramidStage
+__init__	segmentation_models_pytorch/pspnet/decoder.py	/^    def __init__(self, in_channels, sizes=(1, 2, 3, 6), use_bathcnorm=True):$/;"	m	class:PSPModule
+__init__	segmentation_models_pytorch/pspnet/decoder.py	/^    def __init__(self, in_features, out_features):$/;"	m	class:AUXModule
+__init__	segmentation_models_pytorch/pspnet/model.py	/^    def __init__($/;"	m	class:PSPNet
+__init__	segmentation_models_pytorch/unet/decoder.py	/^    def __init__($/;"	m	class:UnetDecoder
+__init__	segmentation_models_pytorch/unet/decoder.py	/^    def __init__(self, in_channels, out_channels, use_batchnorm=True):$/;"	m	class:DecoderBlock
+__init__	segmentation_models_pytorch/unet/model.py	/^    def __init__($/;"	m	class:Unet
+__init__	segmentation_models_pytorch/utils/losses.py	/^    def __init__(self, eps=1e-7, activation='sigmoid'):$/;"	m	class:BCEDiceLoss
+__init__	segmentation_models_pytorch/utils/losses.py	/^    def __init__(self, eps=1e-7, activation='sigmoid'):$/;"	m	class:BCEJaccardLoss
+__init__	segmentation_models_pytorch/utils/losses.py	/^    def __init__(self, eps=1e-7, activation='sigmoid'):$/;"	m	class:DiceLoss
+__init__	segmentation_models_pytorch/utils/losses.py	/^    def __init__(self, eps=1e-7, activation='sigmoid'):$/;"	m	class:JaccardLoss
+__init__	segmentation_models_pytorch/utils/metrics.py	/^    def __init__(self, beta=1, eps=1e-7, threshold=0.5, activation='sigmoid'):$/;"	m	class:FscoreMetric
+__init__	segmentation_models_pytorch/utils/metrics.py	/^    def __init__(self, eps=1e-7, threshold=0.5, activation='sigmoid'):$/;"	m	class:IoUMetric
+__init__	segmentation_models_pytorch/utils/train.py	/^    def __init__(self, model, loss, metrics, device='cpu', verbose=True):$/;"	m	class:ValidEpoch
+__init__	segmentation_models_pytorch/utils/train.py	/^    def __init__(self, model, loss, metrics, optimizer, device='cpu', verbose=True):$/;"	m	class:TrainEpoch
+__init__	segmentation_models_pytorch/utils/train.py	/^    def __init__(self, model, loss, metrics, stage_name, device='cpu', verbose=True):$/;"	m	class:Epoch
+__len__	loader/loader_camvid.py	/^  def __len__(self):$/;"	m	class:camvidLoader	file:
+__name__	segmentation_models_pytorch/utils/losses.py	/^    __name__ = 'bce_dice_loss'$/;"	v	class:BCEDiceLoss
+__name__	segmentation_models_pytorch/utils/losses.py	/^    __name__ = 'bce_jaccard_loss'$/;"	v	class:BCEJaccardLoss
+__name__	segmentation_models_pytorch/utils/losses.py	/^    __name__ = 'dice_loss'$/;"	v	class:DiceLoss
+__name__	segmentation_models_pytorch/utils/losses.py	/^    __name__ = 'jaccard_loss'$/;"	v	class:JaccardLoss
+__name__	segmentation_models_pytorch/utils/metrics.py	/^    __name__ = 'f-score'$/;"	v	class:FscoreMetric
+__name__	segmentation_models_pytorch/utils/metrics.py	/^    __name__ = 'iou'$/;"	v	class:IoUMetric
+__version__	segmentation_models_pytorch/__version__.py	/^__version__ = '.'.join(map(str, VERSION))/;"	v
+_format_logs	segmentation_models_pytorch/utils/train.py	/^    def _format_logs(self, logs):$/;"	m	class:Epoch
+_get	segmentation_models_pytorch/pspnet/decoder.py	/^    def _get(self, xs):$/;"	m	class:PSPDecoder
+_select_names	tests/test_models.py	/^def _select_names(names, k=2):$/;"	f
+_test_forward_backward	tests/test_models.py	/^def _test_forward_backward(model_fn, encoder_name):$/;"	f
+_test_preprocessing	tests/test_preprocessing.py	/^def _test_preprocessing(inp, out, **params):$/;"	f
+_test_pretrained_model	tests/test_models.py	/^def _test_pretrained_model(model_fn, encoder_name, encoder_weights):$/;"	f
+_to_device	segmentation_models_pytorch/utils/train.py	/^    def _to_device(self):$/;"	m	class:Epoch
+_transition	segmentation_models_pytorch/encoders/densenet.py	/^    def _transition(x, transition_block):$/;"	m	class:DenseNetEncoder
+_upsample	segmentation_models_pytorch/pspnet/decoder.py	/^def _upsample(x, size):$/;"	f
+about	setup.py	/^about = {}$/;"	v
+author	setup.py	/^    author=AUTHOR,$/;"	v
+author_email	setup.py	/^    author_email=EMAIL,$/;"	v
+batch_update	segmentation_models_pytorch/utils/train.py	/^    def batch_update(self, x, y):$/;"	m	class:Epoch
+batch_update	segmentation_models_pytorch/utils/train.py	/^    def batch_update(self, x, y):$/;"	m	class:TrainEpoch
+batch_update	segmentation_models_pytorch/utils/train.py	/^    def batch_update(self, x, y):$/;"	m	class:ValidEpoch
+camvidLoader	loader/loader_camvid.py	/^class camvidLoader(Dataset):$/;"	c
+cfg	segmentation_models_pytorch/encoders/vgg.py	/^cfg = {$/;"	v
+classifiers	setup.py	/^    classifiers=[$/;"	v
+cmdclass	setup.py	/^    cmdclass={$/;"	v
+compute_channels	segmentation_models_pytorch/unet/decoder.py	/^    def compute_channels(self, encoder_channels, decoder_channels):$/;"	m	class:UnetDecoder
+densenet_encoders	segmentation_models_pytorch/encoders/densenet.py	/^densenet_encoders = {$/;"	v
+description	setup.py	/^    description = 'Build and publish the package.'$/;"	v	class:UploadCommand
+description	setup.py	/^    description=DESCRIPTION,$/;"	v
+device	train.py	/^                device=device,$/;"	v
+device	train.py	/^  device = 'cpu:0'$/;"	v
+dpn_encoders	segmentation_models_pytorch/encoders/dpn.py	/^dpn_encoders = {$/;"	v
+encoders	segmentation_models_pytorch/encoders/__init__.py	/^encoders = {}$/;"	v
+extras_require	setup.py	/^    extras_require=EXTRAS,$/;"	v
+f_score	segmentation_models_pytorch/utils/functions.py	/^def f_score(pr, gt, beta=1, eps=1e-7, threshold=None, activation='sigmoid'):$/;"	f
+finalize_options	setup.py	/^    def finalize_options(self):$/;"	m	class:UploadCommand
+forward	segmentation_models_pytorch/base/encoder_decoder.py	/^    def forward(self, x):$/;"	m	class:EncoderDecoder
+forward	segmentation_models_pytorch/common/blocks.py	/^    def forward(self, x):$/;"	m	class:Conv2dReLU
+forward	segmentation_models_pytorch/encoders/densenet.py	/^    def forward(self, x):$/;"	m	class:DenseNetEncoder
+forward	segmentation_models_pytorch/encoders/dpn.py	/^    def forward(self, x):$/;"	m	class:DPNEncorder
+forward	segmentation_models_pytorch/encoders/inceptionresnetv2.py	/^    def forward(self, x):$/;"	m	class:InceptionResNetV2Encoder
+forward	segmentation_models_pytorch/encoders/resnet.py	/^    def forward(self, x):$/;"	m	class:ResNetEncoder
+forward	segmentation_models_pytorch/encoders/senet.py	/^    def forward(self, x):$/;"	m	class:SENetEncoder
+forward	segmentation_models_pytorch/encoders/vgg.py	/^    def forward(self, x):$/;"	m	class:VGGEncoder
+forward	segmentation_models_pytorch/fpn/decoder.py	/^    def forward(self, x):$/;"	m	class:Conv3x3GNReLU
+forward	segmentation_models_pytorch/fpn/decoder.py	/^    def forward(self, x):$/;"	m	class:FPNBlock
+forward	segmentation_models_pytorch/fpn/decoder.py	/^    def forward(self, x):$/;"	m	class:FPNDecoder
+forward	segmentation_models_pytorch/fpn/decoder.py	/^    def forward(self, x):$/;"	m	class:SegmentationBlock
+forward	segmentation_models_pytorch/linknet/decoder.py	/^    def forward(self, x):$/;"	m	class:DecoderBlock
+forward	segmentation_models_pytorch/linknet/decoder.py	/^    def forward(self, x):$/;"	m	class:LinknetDecoder
+forward	segmentation_models_pytorch/linknet/decoder.py	/^    def forward(self, x):$/;"	m	class:TransposeX2
+forward	segmentation_models_pytorch/pspnet/decoder.py	/^    def forward(self, x):$/;"	m	class:AUXModule
+forward	segmentation_models_pytorch/pspnet/decoder.py	/^    def forward(self, x):$/;"	m	class:PSPDecoder
+forward	segmentation_models_pytorch/pspnet/decoder.py	/^    def forward(self, x):$/;"	m	class:PSPModule
+forward	segmentation_models_pytorch/pspnet/decoder.py	/^    def forward(self, x):$/;"	m	class:PyramidStage
+forward	segmentation_models_pytorch/unet/decoder.py	/^    def forward(self, x):$/;"	m	class:CenterBlock
+forward	segmentation_models_pytorch/unet/decoder.py	/^    def forward(self, x):$/;"	m	class:DecoderBlock
+forward	segmentation_models_pytorch/unet/decoder.py	/^    def forward(self, x):$/;"	m	class:UnetDecoder
+forward	segmentation_models_pytorch/utils/losses.py	/^    def forward(self, y_pr, y_gt):$/;"	m	class:BCEDiceLoss
+forward	segmentation_models_pytorch/utils/losses.py	/^    def forward(self, y_pr, y_gt):$/;"	m	class:BCEJaccardLoss
+forward	segmentation_models_pytorch/utils/losses.py	/^    def forward(self, y_pr, y_gt):$/;"	m	class:DiceLoss
+forward	segmentation_models_pytorch/utils/losses.py	/^    def forward(self, y_pr, y_gt):$/;"	m	class:JaccardLoss
+forward	segmentation_models_pytorch/utils/metrics.py	/^    def forward(self, y_pr, y_gt):$/;"	m	class:FscoreMetric
+forward	segmentation_models_pytorch/utils/metrics.py	/^    def forward(self, y_pr, y_gt):$/;"	m	class:IoUMetric
+get_encoder	segmentation_models_pytorch/encoders/__init__.py	/^def get_encoder(name, encoder_weights=None):$/;"	f
+get_encoder	tests/test_models.py	/^def get_encoder():$/;"	f
+get_encoder_names	segmentation_models_pytorch/encoders/__init__.py	/^def get_encoder_names():$/;"	f
+get_preprocessing_fn	segmentation_models_pytorch/encoders/__init__.py	/^def get_preprocessing_fn(encoder_name, pretrained='imagenet'):$/;"	f
+get_pretrained_weights_name	tests/test_models.py	/^def get_pretrained_weights_name(encoder_name):$/;"	f
+here	setup.py	/^here = os.path.abspath(os.path.dirname(__file__))$/;"	v
+inception_encoders	segmentation_models_pytorch/encoders/inceptionresnetv2.py	/^inception_encoders = {$/;"	v
+include_package_data	setup.py	/^    include_package_data=True,$/;"	v
+initialize	segmentation_models_pytorch/base/model.py	/^    def initialize(self):$/;"	m	class:Model
+initialize	segmentation_models_pytorch/encoders/densenet.py	/^    def initialize(self):$/;"	m	class:DenseNetEncoder
+initialize_options	setup.py	/^    def initialize_options(self):$/;"	m	class:UploadCommand
+install_requires	setup.py	/^    install_requires=REQUIRED,$/;"	v
+iou	segmentation_models_pytorch/utils/functions.py	/^def iou(pr, gt, eps=1e-7, threshold=None, activation='sigmoid'):$/;"	f
+jaccard	segmentation_models_pytorch/utils/functions.py	/^jaccard = iou$/;"	v
+license	setup.py	/^    license='MIT',$/;"	v
+load_state_dict	segmentation_models_pytorch/encoders/densenet.py	/^    def load_state_dict(self, state_dict):$/;"	m	class:DenseNetEncoder
+load_state_dict	segmentation_models_pytorch/encoders/dpn.py	/^    def load_state_dict(self, state_dict, **kwargs):$/;"	m	class:DPNEncorder
+load_state_dict	segmentation_models_pytorch/encoders/inceptionresnetv2.py	/^    def load_state_dict(self, state_dict, **kwargs):$/;"	m	class:InceptionResNetV2Encoder
+load_state_dict	segmentation_models_pytorch/encoders/resnet.py	/^    def load_state_dict(self, state_dict, **kwargs):$/;"	m	class:ResNetEncoder
+load_state_dict	segmentation_models_pytorch/encoders/senet.py	/^    def load_state_dict(self, state_dict, **kwargs):$/;"	m	class:SENetEncoder
+load_state_dict	segmentation_models_pytorch/encoders/vgg.py	/^    def load_state_dict(self, state_dict, **kwargs):$/;"	m	class:VGGEncoder
+long_description	setup.py	/^        long_description = '\\n' + f.read()$/;"	v
+long_description	setup.py	/^    long_description = DESCRIPTION$/;"	v
+long_description	setup.py	/^    long_description=long_description,$/;"	v
+long_description_content_type	setup.py	/^    long_description_content_type='text\/x-rst',$/;"	v
+loss	train.py	/^  loss = nn.CrossEntropyLoss() $/;"	v
+max_score	train.py	/^      max_score = valid_logs['iou']$/;"	v
+max_score	train.py	/^  max_score = 0$/;"	v
+metrics	train.py	/^  metrics = [seg_models.utils.metrics.IoUMetric(eps=1.),$/;"	v
+name	setup.py	/^    name=NAME,$/;"	v
+on_epoch_start	segmentation_models_pytorch/utils/train.py	/^    def on_epoch_start(self):$/;"	m	class:Epoch
+on_epoch_start	segmentation_models_pytorch/utils/train.py	/^    def on_epoch_start(self):$/;"	m	class:TrainEpoch
+on_epoch_start	segmentation_models_pytorch/utils/train.py	/^    def on_epoch_start(self):$/;"	m	class:ValidEpoch
+optimizer	train.py	/^  optimizer = optim.SGD(pspnet.parameters(), lr=0.001, momentum=0.9)$/;"	v
+packages	setup.py	/^    packages=find_packages(exclude=('tests', 'docs', 'images')),$/;"	v
+predict	segmentation_models_pytorch/base/encoder_decoder.py	/^    def predict(self, x):$/;"	m	class:EncoderDecoder
+preprocess_input	segmentation_models_pytorch/encoders/_preprocessing.py	/^def preprocess_input(x, mean=None, std=None, input_space='RGB', input_range=None, **kwargs):$/;"	f
+preprocessing_fn	train.py	/^  preprocessing_fn = seg_models.encoders.get_preprocessing_fn('resnet34',$/;"	v
+pspnet	train.py	/^  pspnet = seg_models.PSPNet()$/;"	v
+python_requires	setup.py	/^    python_requires=REQUIRES_PYTHON,$/;"	v
+resnet_encoders	segmentation_models_pytorch/encoders/resnet.py	/^resnet_encoders = {$/;"	v
+run	segmentation_models_pytorch/utils/train.py	/^    def run(self, dataloader):$/;"	m	class:Epoch
+run	setup.py	/^    def run(self):$/;"	m	class:UploadCommand
+senet_encoders	segmentation_models_pytorch/encoders/senet.py	/^senet_encoders = {$/;"	v
+status	setup.py	/^    def status(s):$/;"	m	class:UploadCommand
+test_fpn	tests/test_models.py	/^def test_fpn(encoder_name):$/;"	f
+test_input_range	tests/test_preprocessing.py	/^def test_input_range():$/;"	f
+test_input_space	tests/test_preprocessing.py	/^def test_input_space():$/;"	f
+test_linknet	tests/test_models.py	/^def test_linknet(encoder_name):$/;"	f
+test_mean	tests/test_preprocessing.py	/^def test_mean():$/;"	f
+test_pspnet	tests/test_models.py	/^def test_pspnet(encoder_name):$/;"	f
+test_std	tests/test_preprocessing.py	/^def test_std():$/;"	f
+test_unet	tests/test_models.py	/^def test_unet(encoder_name):$/;"	f
+train_data	train.py	/^  train_data = camvidLoader(train_file_paths)$/;"	v
+train_epoch	train.py	/^  train_epoch = seg_models.utils.train.TrainEpoch($/;"	v
+train_file_paths	train.py	/^  train_file_paths = '\/media\/sjang\/EC9EAA6D9EAA2FCE\/data\/camvid\/CamVid\/train.txt'$/;"	v
+train_loader	train.py	/^  train_loader = DataLoader(train_data, batch_size=2,$/;"	v
+train_logs	train.py	/^    train_logs = train_epoch.run(train_loader)$/;"	v
+url	setup.py	/^    url=URL,$/;"	v
+user_options	setup.py	/^    user_options = []$/;"	v	class:UploadCommand
+val_data	train.py	/^  val_data = camvidLoader(val_file_paths)$/;"	v
+val_epoch	train.py	/^  val_epoch = seg_models.utils.train.ValidEpoch($/;"	v
+val_file_paths	train.py	/^  val_file_paths = '\/media\/sjang\/EC9EAA6D9EAA2FCE\/data\/camvid\/CamVid\/val.txt'$/;"	v
+val_loader	train.py	/^  val_loader = DataLoader(val_data, batch_size=1,$/;"	v
+valid_logs	train.py	/^    valid_logs = valid_epoch.run(valid_loader)$/;"	v
+verbose	train.py	/^                verbose=True)$/;"	v
+version	setup.py	/^    version=about['__version__'],$/;"	v
+vgg_encoders	segmentation_models_pytorch/encoders/vgg.py	/^vgg_encoders = {$/;"	v

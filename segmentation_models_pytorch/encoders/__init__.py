@@ -10,6 +10,8 @@ from .inceptionresnetv2 import inception_encoders
 
 from ._preprocessing import preprocess_input
 
+import pdb
+
 encoders = {}
 encoders.update(resnet_encoders)
 encoders.update(dpn_encoders)
@@ -26,7 +28,8 @@ def get_encoder(name, encoder_weights=None):
 
     if encoder_weights is not None:
         settings = encoders[name]['pretrained_settings'][encoder_weights]
-        encoder.load_state_dict(model_zoo.load_url(settings['url']))
+        encoder.load_state_dict(model_zoo.load_url(settings['url'],
+                                                  model_dir='./pretrained'))
 
     return encoder
 
