@@ -42,7 +42,8 @@ def get_preprocessing_fn(encoder_name, pretrained='imagenet'):
     settings = encoders[encoder_name]['pretrained_settings']
 
     if pretrained not in settings.keys():
-        raise ValueError('Avaliable pretrained options {}'.format(settings.keys()))
+        raise ValueError(
+            'Avaliable pretrained options {}'.format(settings.keys()))
 
     input_space = settings[pretrained].get('input_space')
     input_range = settings[pretrained].get('input_range')
