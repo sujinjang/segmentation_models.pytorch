@@ -1,3 +1,4 @@
+import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -7,6 +8,7 @@ import segmentation_models_pytorch as seg_models
 from loader.loader_camvid import camvidLoader 
 from torch.utils.data import DataLoader
 import albumentations as albu
+import cv2
 import pdb
 
 def to_tensor(x, **kwargs):
@@ -20,20 +22,30 @@ if __name__ == '__main__':
     device = torch.device('cuda:0')
     
     # build model
-    pspnet = seg_models.PSPNet(classes=12).to(device)
+    pspnet = seg_models.PSPNet(classes=32).to(device)
     print("Created a model")
     
     # preprocessing
-    preprocessing_fn = seg_models.encoders.get_preprocessing_fn('resnet34',
-                                                                'imagenet')
-    preprocessor = albu.Compose([albu.Lambda(image=preprocessing_fn),
-                                albu.Lambda(image=to_tensor)])
+    #preprocessing_fn = seg_models.encoders.get_preprocessing_fn('resnet34',
+    #                                                            'imagenet')
+    #preprocessor = albu.Compose([albu.Lambda(image=preprocessing_fn),
+    #                            albu.Lambda(image=to_tensor)])
+    preprocessor=None
     
+    # transforms
+    data_transform = albu.Compose([
+                        albu.RandomCrop(320, 320, p=1.0),
+                        albu.HorizontalFlip(p=0.5),
+                        albu.Rotate(limit=(-45,45), 
+                            interpolation=cv2.INTER_LINEAR,
+                            p=1.0)
+                        ])
+
     # load training, validation data
-    train_file_paths = '/media/sjang/EC9EAA6D9EAA2FCE/data/camvid/CamVid/train.txt'
-    val_file_paths = '/media/sjang/EC9EAA6D9EAA2FCE/data/camvid/CamVid/val.txt'
+    train_file_paths = '/home/sjang/research/data/camvid/CamVid/train.txt'
+    val_file_paths = '/home/sjang/research/data/camvid/CamVid/val.txt'
     
-    train_data = camvidLoader(train_file_paths, preprocessing=preprocessor)
+    train_data = camvidLoader(train_file_paths, preprocessing=preprocessor, augmentation=data_transform)
     val_data = camvidLoader(val_file_paths, preprocessing=preprocessor)
     
     train_loader = DataLoader(train_data, batch_size=2,
@@ -84,3 +96,16 @@ if __name__ == '__main__':
             optimizer.step()
             
             print("step:{}, loss={}".format(step, loss)) 
+
+            if step % 100 == 0:
+                img = images[0].cpu().numpy().transpose(1,2,0)
+                img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+                if not os.path.exists('./sample_inputs'):
+                    os.makedirs('./sample_inputs')
+                img_name = "./sample_inputs/img_%d.png" % step
+                cv2.imwrite(img_name, img)
+
+                label = labels[0].cpu().numpy()
+                label = train_data.id_to_color(label)
+                cv2.imwrite(img_name.replace('img', 'label'), label)
+
